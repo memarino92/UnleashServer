@@ -3,7 +3,7 @@ const unleash = require('unleash-server');
 unleash
   .start({
     db: {
-      ssl: false,
+      ssl: process.env.DB_SSL === 'true',
       host: process.env.DB_HOST,
       port: process.env.DB_PORT,
       database: process.env.DB_DATABASE,
