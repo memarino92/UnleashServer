@@ -1,4 +1,3 @@
-require('dotenv').config();
 const unleash = require('unleash-server');
 
 unleash
